@@ -1,0 +1,191 @@
+:root {
+    --yellow-bg-color: #e7c448;
+    --grey-color: #afaeae;
+}
+
+@media screen and (max-width: 930px) {
+    .block-main {
+        flex-direction: column;
+    }
+}
+body {
+    font-family: "Didact Gothic";
+    margin: 0 0;
+}
+
+/*header*/
+.header {
+    margin: 60px 30px 40px 30px;
+}
+.header-resume-info__name h1{
+    font-weight: lighter;
+    font-size: 44px;
+    margin: 0 0 -10px 0;
+}
+.header-resume-info__specialty h2 {
+    margin: 0;
+    font-weight: lighter;
+}
+.header-resume-info__address {
+    margin: 30px 0 0 0;
+}
+.header-resume-info__line{
+    height: 2px;
+    background-color: var(--grey-color);
+    margin: 40px 0 0 0;
+}
+/*the and*/
+
+.block-main {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+
+}
+
+.main {
+    margin: 0 30px 0 30px;
+    flex-basis: 260px;
+    flex-grow: 3;
+    max-width: 1200px;
+}
+
+.sidebar-left {
+    flex-basis: 260px;
+    flex-grow: 1;
+    max-width: 760px;
+    margin: 0 0 0 30px;
+}
+
+/*block sidebar-left*/
+.logo {
+    width: 400px;
+    height: 300px;
+}
+/*block title-square*/
+.title-square {
+    background-color: var(--yellow-bg-color);
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px 20px 5px 20px;
+    text-align: center;
+    display: inline-flex;
+    margin: 10px 10px 10px 10px;
+}
+/*the end*/
+
+/*blok skills*/
+.skill-progress {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 0 10px 0;
+}
+
+.skill-progress__title {
+    margin: 10px 10px 0 10px;
+    font-size: 20px;
+}
+
+.skill-progress__scale {
+    margin: 10px 120px 10px 10px;
+    height: 10px;
+    border: 1px solid var(--grey-color);
+}
+/*modificator blok skills*/
+.skill-progress__scale__80{
+    background-color: var(--grey-color);
+    height: 10px;
+    width: 80%;
+}
+.skill-progress__scale__70{
+    background-color: var(--grey-color);
+    height: 10px;
+    width: 70%;
+}
+.skill-progress__scale__60{
+    background-color: var(--grey-color);
+    height: 10px;
+    width: 60%;
+}
+.skill-progress__scale__50{
+    background-color: var(--grey-color);
+    height: 10px;
+    width: 50%;
+}
+/*the end*/
+/*the end*/
+
+
+/*main*/
+
+.text-block{
+    display: inline-block;
+    margin: 10px 10px 10px 10px;
+    font-size: 18px;
+}
+
+/*block education*/
+.education {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+}
+.education__date {
+    margin: 10px 0 10px 10px;
+}
+.education-info {
+    margin: 10px auto 10px auto;
+}
+.education-info__degree {
+    font-weight: bold;
+}
+/*the end*/
+
+/*block experience*/
+.experience {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 10px 20px 10px;
+    padding: 10px 0 0 0;
+}
+.experience__date {
+    margin: 0 0 10px 0;
+}
+.experience__post {
+    font-weight: bold;
+}
+.experience__company {
+}
+.experience__description {
+    margin: 10px 0 0 0;
+    text-align: left;
+    width: 60%;
+}
+/*the end*/
+
+/*block reference*/
+.reference-block {
+    display: flex;
+}
+.reference {
+    margin: 10px 10px 10px 10px;
+    width: 50%;
+}
+.reference__name {
+    font-weight: bold;
+}
+.reference__tel {
+    font-size: 12px;
+}
+.reference__email {
+    font-size: 12px;
+}
+/*the end*/
+/*the end*/
+
+/*footer*/
+.footer {
+    height: 30px;
+    background-color: var(--yellow-bg-color);
+}
